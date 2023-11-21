@@ -2,7 +2,7 @@
 name = "django-base"
 version = "0.1.0"
 description = "A utility package for Django."
-license = "LGPL-3.0-or-later"
+license = "AGPL"
 authors = ["Ryan Jackson <supra621@gmail.com>"]
 readme = "README.md"
 packages = [{include = "django_base"}]
