@@ -13,7 +13,10 @@ def doc(obj) -> str:
         return mark_safe('<!-- no doc -->')
     if hasattr(obj, '__bases__'):
         this = [f'{obj.__name__}: {obj.__doc__}']
-        bases = [f'{x.__name__}: {x.__doc__}' for x in obj.__bases__ if hasattr(x, '__doc__')]
+        bases = [
+            f'{x.__name__}: {x.__doc__}'
+            for x in obj.__bases__ if hasattr(x, '__doc__')
+        ]
         return '\n\n'.join(this + bases)
     return obj.__doc__
 
