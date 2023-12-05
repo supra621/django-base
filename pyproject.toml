@@ -9,7 +9,7 @@ packages = [{include = "django_base"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
-django = "^4.2"
+django = "*"
 
 [build-system]
 requires = ["poetry-core"]
