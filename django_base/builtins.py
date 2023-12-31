@@ -73,9 +73,6 @@ class AssetNode(template.Node):
         #     from django.contrib.staticfiles.storage import staticfiles_storage
         #     return staticfiles_storage.url(path)
         # else:
-        print(path)
-        print(PrefixNode.handle_simple('ASSET_URL'))
-        print(urljoin(PrefixNode.handle_simple('ASSET_URL'), quote(path)))
         return urljoin(PrefixNode.handle_simple('ASSET_URL'), quote(path))
 
     @classmethod
